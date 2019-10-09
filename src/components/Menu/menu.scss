@@ -1,0 +1,25 @@
+/* dans scss on peut importer d'autres fichiers, on n'indique pas le underscore _ */
+@import 'src/styles/vars';
+
+.nav {
+    /* on peut faire des calculs simples */
+    padding:$big-margin 0;
+    text-align: center;
+
+    &-link {
+        text-decoration: underline;
+        margin:0 $base-margin;
+        color: $dark-color;
+        cursor: pointer;
+
+        &:hover {
+            /* on peut utiliser des variables définies au préalable dans du scss */
+            color: $main-color;
+        }
+
+        &--active {
+            color: $main-color;
+            text-decoration: none;
+        }
+    }
+}

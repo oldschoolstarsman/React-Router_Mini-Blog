@@ -1,0 +1,9 @@
+/* je dois importer le fichier de variables chaque fois que je veux m'en serveir */
+@import 'src/styles/vars';
+
+.footer {
+    padding: $big-margin 0;
+    text-align: center;
+    color: $footer-text-color;
+    background-color: $dark-color;
+}
